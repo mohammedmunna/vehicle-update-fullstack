@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #1e1e1e;
+}
+
+.appbar {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 1.3rem 4rem;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.appbar .brand {
+  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 15rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+
+.upload-section h2 {
+  margin-bottom: 0.8rem;
+}
+
+.uploadButton {
+  font-style: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #1fc73b;
+  border-radius: 6px;
+  padding: 12px 22px;
+  color: #1fc73b;
+  box-shadow: inset 0 0 #1fc73b;
+  transition: 0.5s;
+  margin: 10px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.uploadButton:hover {
+  box-shadow: inset 0 -100px 0 0 #1fc73b;
+  color: #1e1e1e;
+}
+
+.uploadButton:active {
+  opacity: 0.5;
+}
+
+.search-section {
+  width: 100%;
+}
+
+.search-section input {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+}
+
+.table-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  padding: 0.75rem;
+  text-align: left;
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #1e1e1e;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.upload-section input[type="file"]::file-selector-button {
+  border-radius: 6px;
+  border: 1px solid #b4aeae;
+  cursor: pointer;
+  padding: 2px;
+  transition: 0.5s;
+}
+
+.upload-section input[type="file"]::file-selector-button:hover {
+  background-color: #b5b4b6;
+  border: 1px solid #858383;
+}

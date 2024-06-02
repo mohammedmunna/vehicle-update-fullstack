@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicles</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="appbar">
+      <div class="brand">Auto Company</div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="upload-section">
+          <h2>Upload material</h2>
+          <form id="uploadForm">
+            <label for="file">Upload updated material:</label>
+            <input type="file" id="jsonFile" accept=".json" />
+            <br />
+            <button type="submit" id="uploadButton" class="uploadButton">
+              Upload
+            </button>
+          </form>
+        </div>
+        <h2>Vehicle data</h2>
+        <div class="search-section">
+          <input type="search" id="searchInput" placeholder="Search..." />
+        </div>
+        <div class="table-section">
+          <table id="dataTable">
+            <thead>
+              <tr id="tableHeader"></tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
