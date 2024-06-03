@@ -1,6 +1,6 @@
 # Vehicle Info Update
 
-This project is a full-stack web application built using the following tools:
+Welcome to the Vehicle Info Update project, a full-stack web application developed with modern technologies:
 
 - JavaScript
 - MYSQL
@@ -9,7 +9,7 @@ This project is a full-stack web application built using the following tools:
 
 [![My Skills](https://skillicons.dev/icons?i=js,nodejs,express,mysql)](https://skillicons.dev)
 
-You may access this application from [here](https://vehicle-update-fullstack.onrender.com).
+Access the application <a href="https://vehicle-update-fullstack.onrender.com" target="_blank">here</a>.
 
 ## Installation
 
@@ -19,7 +19,7 @@ Ensure you have the following installed:
 
 - Node.js (v20.13.x or later)
 - npm (v10.5.x or later)
-- MYSQL
+- MySQL
 
 ### Backend Setup
 
@@ -36,7 +36,7 @@ Ensure you have the following installed:
    npm install
    ```
 
-3. Create a `.env` file in the `vehicle-update-fullstack` directory and add your MYSQL secrets and other environment variables:
+3. Create a `.env` file in the `vehicle-update-fullstack` directory and add your MySQL secrets and other environment variables:
 
    ```
    DB_NAME=nameofyourdatabase
@@ -53,17 +53,17 @@ Ensure you have the following installed:
    npm run dev
    ```
 
-5. Open your browser and go to `http://localhost:8000`
+5. Open your browser and navigate to `http://localhost:8000`
 
 ### Database Setup
 
-1. The aplication allows you to create a database by API request: `http://localhost:8000/create-db`
+1. Create the database by sending a request to: `http://localhost:8000/create-db`
 
-2. Create database table using API request: `http://localhost:8000/create-vehicles-table`
+2. Create the database table by sending a request to: `http://localhost:8000/create-vehicles-table`
 
-### Data of file
+### Data File Format
 
-For testing the file upload, the file has to be `JSON` format, with the following file contents:
+To test file uploads, ensure your file is in `JSON` format with the following structure:
 
 ```bash
   [{
@@ -84,5 +84,6 @@ For testing the file upload, the file has to be `JSON` format, with the followin
    "reason_2": "reason #2 why",
    "reason_3": ""
  },
- ...]
+// Add more records as needed
+]
 ```
