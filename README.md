@@ -9,7 +9,7 @@ Welcome to the Vehicle Info Update project, a full-stack web application develop
 
 [![My Skills](https://skillicons.dev/icons?i=js,nodejs,express,mysql)](https://skillicons.dev)
 
-Access the application <a href="https://vehicle-update-fullstack.onrender.com" target="_blank">here</a>.
+Access the application [here](https://vehicle-update-fullstack.onrender.com).
 
 ## Installation
 
