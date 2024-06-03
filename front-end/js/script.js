@@ -1,11 +1,14 @@
-// get the form and search field
+// get the form, modal and search field
 const form = document.getElementById("uploadForm");
 const searchInput = document.getElementById("searchInput");
+const modal = document.getElementById("processingModal");
 
 /** handle file upload request with the file data, 
     update table with the response data */
 const uploadFile = async (event) => {
   event.preventDefault();
+  // Show the modal
+  modal.style.display = "block";
   const fileInput = document.getElementById("jsonFile");
   const file = fileInput.files[0];
   if (!file) {
@@ -24,13 +27,16 @@ const uploadFile = async (event) => {
     if (response.ok) {
       const data = await response.json();
       updateTable(data);
+      modal.style.display = "none";
       // clear the form after successful upload
       form.reset();
     } else {
+      modal.style.display = "none";
       alert("File upload failed.");
     }
   } catch (error) {
     console.error("Error:", error);
+    modal.style.display = "none";
     alert("An error occurred.");
   }
 };
