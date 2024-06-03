@@ -1,9 +1,10 @@
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const multer = require("multer");
+require("dotenv").config();
 
 const corsOptions = {
-  origin: "http://localhost:8000",
+  origin: process.env.APPLICATION_URL,
   optionsSuccessStatus: 200,
 };
 
